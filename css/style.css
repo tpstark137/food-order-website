@@ -6,6 +6,7 @@
 #navbar{
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 #logo{
  margin: 10px 34px;
@@ -21,6 +22,7 @@
 #navbar{
   position:sticky;/*issai karnai sai limited sizd kaa houjaiga navbar*/
   top: 0;
+  width: 100%;
 }
 #navbar::before{    /*Pseudo selectors*/
   content: "";
@@ -101,6 +103,10 @@ text-decoration: none; /*isai underline chli jaigi*/
     border-radius: 10px;
     cursor:pointer;
 }
+.btn:hover{
+  background-color: white;
+  color: black;
+}
 .center{
   text-align: center;
 }
@@ -143,8 +149,11 @@ text-decoration: none; /*isai underline chli jaigi*/
 
 #clients{
     display: flex;
+    position:relative;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    margin: 17px;
 }
 
 .client-item{
@@ -153,6 +162,8 @@ text-decoration: none; /*isai underline chli jaigi*/
 
 #clients img{
     height: 124px;
+    position: relative;
+  
 }
 #contact{
   position: relative;
@@ -193,4 +204,16 @@ footer{
    font-size: 1.3rem;
    font-family: 'Bree Serif', serif;
 
+}
+
+textarea{
+  resize: none;
+}
+#submit{
+  background-color: red;
+  color: white;
+}
+#submit:hover{
+  background-color: white;
+  color: black;
 }
